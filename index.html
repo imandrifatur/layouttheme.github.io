@@ -96,6 +96,7 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             text-align: center;
+            position: relative; /* Needed for icon positioning */
         }
 
         .video-item img {
@@ -113,6 +114,22 @@
         .video-details {
             color: #777;
             font-size: 14px;
+        }
+
+        /* Icon Video Play Styling */
+        .video-item .play-icon {
+            font-size: 50px;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: color 0.3s ease;
+            pointer-events: none; /* Icon is not clickable */
+        }
+
+        .video-item:hover .play-icon {
+            color: rgba(255, 255, 255, 1); /* Brighter on hover */
         }
 
         /* Header */
@@ -214,27 +231,128 @@
         <div class="video-grid">
             <div class="video-item">
                 <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
                 <div class="video-title">Video Title 1</div>
                 <div class="video-details">1M views - 1 day ago</div>
             </div>
             <div class="video-item">
                 <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
                 <div class="video-title">Video Title 2</div>
                 <div class="video-details">500K views - 3 days ago</div>
             </div>
             <div class="video-item">
                 <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
                 <div class="video-title">Video Title 3</div>
                 <div class="video-details">300K views - 5 days ago</div>
             </div>
             <div class="video-item">
                 <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 4</div>
+                <div class="video-details">2M views - 1 week ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 1</div>
+                <div class="video-details">1M views - 1 day ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 2</div>
+                <div class="video-details">500K views - 3 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 3</div>
+                <div class="video-details">300K views - 5 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 4</div>
+                <div class="video-details">2M views - 1 week ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 1</div>
+                <div class="video-details">1M views - 1 day ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 2</div>
+                <div class="video-details">500K views - 3 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 3</div>
+                <div class="video-details">300K views - 5 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 4</div>
+                <div class="video-details">2M views - 1 week ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 1</div>
+                <div class="video-details">1M views - 1 day ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 2</div>
+                <div class="video-details">500K views - 3 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 3</div>
+                <div class="video-details">300K views - 5 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 4</div>
+                <div class="video-details">2M views - 1 week ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 1</div>
+                <div class="video-details">1M views - 1 day ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 2</div>
+                <div class="video-details">500K views - 3 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
+                <div class="video-title">Video Title 3</div>
+                <div class="video-details">300K views - 5 days ago</div>
+            </div>
+            <div class="video-item">
+                <img src="https://via.placeholder.com/300" alt="Video thumbnail">
+                <i class="fas fa-play-circle play-icon"></i>
                 <div class="video-title">Video Title 4</div>
                 <div class="video-details">2M views - 1 week ago</div>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Footer -->
 <div class="footer">
@@ -245,6 +363,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
